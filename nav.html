@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					分类
+				</div>
+				<div class="topbar-next">
+					
+				</div>
+			</div>
+			<div class="content nav">
+				<div class="nav-group">
+					<div class="nav-title">
+						追求刺激
+					</div>
+					<div class="nav-main">
+						<div class="nav-item">
+							悬疑
+						</div>
+						<div class="nav-item">
+							冒险
+						</div>
+						<div class="nav-item">
+							灵异
+						</div>
+						<div class="nav-item">
+							玄幻
+						</div>
+						<div class="nav-item">
+							犯罪
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.init()
+		mui('.nav-group').on('tap', '.nav-item', function() {
+			mytap('nav-detail.html')
+		})
+	</script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+</html>

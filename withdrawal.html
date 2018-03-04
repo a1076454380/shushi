@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>提现</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+					<div class="topbar-back">
+						<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+					</div>
+					<div class="topbar-text">
+						提现
+					</div>
+					<div class="topbar-next"></div>
+			</div>
+			<div class="content revenue withdrawal">
+					<div class="revenue-main">
+						<div class="main-item">
+							充值钢镚:0钢镚
+						</div>
+						<div class="main-item withdrawal-boo">
+							不可提现
+						</div>
+					</div>
+					<div class="revenue-main">
+						<div class="main-item">
+							收入钢镚:5999钢镚
+						</div>
+						<div class="main-item withdrawal-boo">
+							可提现
+						</div>
+					</div>
+					<div class="withdrawal-text">
+						收入钢镚最少1万可以提现切只能提现到支付宝！
+					</div>
+					<div class="withdrawal-text text02">
+						发放日期每月20日至25日之间
+					</div>
+					<div class="revenue-more withdrawal-click">
+						提现
+					</div>
+					<div class="revenue-more record">
+						<a href="WithdrawalRecord.html">提现记录</a>
+					</div>
+			</div>
+			<div class="withdrawal-alert">
+				<form action="" method="post">
+					<div class="alert-top">
+						请选择账户
+					</div>
+					<div class="alert-group">
+						<input type="radio" name="zh" id="" value="" />
+						1076454380@qq.com
+					</div>
+					<div class="alert-group">
+						<input type="radio" name="zh" id="" value="" />
+						1904819795@qq.com
+					</div>
+					<div class="new-withdrawal">
+						<input type="submit" value="确定"/>
+						<div class="newwithdrawal">
+							<a href="recordUser.html">添加账户</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			$('.withdrawal-click').click(function(){
+				console.log($('.withdrawal-alert').css('display'))
+				if($('.withdrawal-alert').css('display')=='none'){
+					$('.withdrawal-alert').fadeIn()
+				}else{
+					$('.withdrawal-alert').fadeOut()
+				}
+			})
+			$("input[type=submit]").click(function(){
+				$('.withdrawal-click').click()
+			})
+		</script>
+	</body>
+
+</html>

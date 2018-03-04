@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>作者中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					作者中心
+				</div>
+				<div class="topbar-next">
+
+				</div>
+			</div>
+			<div class="content authorcenter">
+				<div class="author-avatar">
+					<img src="img/advertising.jpg" />
+				</div>
+				<div class="author-name topname">
+					未来<span class="level">10级</span>
+				</div>
+				<div class="author-name topname" style="margin-top: -.1rem;font-size: .25rem;">
+					男
+				</div>
+				<div class="author-name topname">
+					简介:本世纪最伟大作家.....
+				</div>
+				<div class="author-collect">
+					<div class="collect-list collect">
+						<div class="collect-name">
+							收藏
+						</div>
+						<div class="collect-num">
+							555收藏
+						</div>
+					</div>
+					<div class="collect-list message">
+						<div class="collect-name">
+							留言
+						</div>
+						<div class="collect-num">
+							666收藏
+						</div>
+					</div>
+				</div>
+				<div class="author-name">
+					作品展示
+				</div>
+				<div class="author-works">
+					<div class="author-work">
+						<div class="work-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="work-inform">
+							<div class="work-name">
+								书名：老人与海
+							</div>
+							<div class="work-author">
+								作者：朱海青
+							</div>
+						</div>
+						<div class="work-collects">
+							<div class="work-collect">
+								666阅读
+							</div>
+							<div class="work-collect">
+								666收藏
+							</div>
+							<div class="work-collect">
+								666评论
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.author-works','.author-work','books.html','')
+		mytapp('.author-collect','.message','authorMessage.html','')
+		mytapp('.author-collect','.collect','bookCollect.html','')
+	</script>
+</html>

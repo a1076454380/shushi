@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>创作中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//使用IE条件注释来判断是否IE6，通过判断userAgent不一定准确
+			if(document.all) document.write('<!--[if lte IE 6]><script type="text/javascript">window.ie6= true<\/script><![endif]-->');
+			// var ie6 = /msie 6/i.test(navigator.userAgent);//不推荐，有些系统的ie6 userAgent会是IE7或者IE8
+			function change(picId, fileId) {
+				var pic = document.getElementById(picId);
+				var file = document.getElementById(fileId);
+				if(window.FileReader) { //chrome,firefox7+,opera,IE10,IE9，IE9也可以用滤镜来实现
+					oFReader = new FileReader();
+					oFReader.readAsDataURL(file.files[0]);
+					oFReader.onload = function(oFREvent) {
+						pic.src = oFREvent.target.result;
+					};
+
+				} else if(document.all) { //IE8-
+					file.select();
+					var reallocalpath = document.selection.createRange().text //IE下获取实际的本地文件路径
+					if(window.ie6) pic.src = reallocalpath; //IE6浏览器设置img的src为本地路径可以直接显示图片
+					else { //非IE6版本的IE由于安全问题直接设置img的src无法显示本地图片，但是可以通过滤镜来实现，IE10浏览器不支持滤镜，需要用FileReader来实现，所以注意判断FileReader先
+						pic.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='image',src=\"" + reallocalpath + "\")";
+						pic.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='; //设置img的src为base64编码的透明图片，要不会显示红xx
+					}
+				} else if(file.files) { //firefox6-
+					if(file.files.item(0)) {
+						url = file.files.item(0).getAsDataURL();
+						pic.src = url;
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form action="">
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					创作一部新作品
+				</div>
+				<div class="topbar-next">
+
+				</div>
+			</div>
+			<div class="content createdbook">
+				<div class="cbook-img">
+					<input type="file" id="bookimg" name='bookimg' onchange="change('fileimg','bookimg')"/>
+					<img src="img/file.png" id="fileimg"/>
+				</div>
+				<div class="cbook-main">
+					<input type="text" name="" id="" value="" placeholder="请输入作品名称"/>
+					<input type="text" name="" id="" value="" placeholder="请输入作品简介"/>
+					<input type="button" name="" id="" value="请选择标签"/>
+					<div class="nav-group">
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Khuan" value="科幻" />科幻
+						</div>
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Xhuan" value="玄幻" />玄幻
+						</div>
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Kjiao" value="科教" />科教
+						</div>
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Yqin" value="科幻" />言情
+						</div>
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Aqin" value="玄幻" />爱情
+						</div>
+						<div  class="book-nav">
+							<input type="checkbox" name="nav" id="Mshi" value="科教" />末世
+						</div>
+					</div>
+					<input type="submit" name="" id="" value="开始创建" />
+				</div>
+			</div>
+		</div>
+		</form>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			$(function(){
+				var navnum=0;
+				$('.book-nav').click(function(){
+					var boo=$(this).children('input').is(":checked")
+					if(boo){
+						navnum--;
+						$(this).children('input').attr("checked",false);
+						$(this).removeClass('book-active')
+					}else{
+						console.log(navnum)
+						if(navnum<5){
+							navnum++;
+							$(this).children('input').attr("checked",true);
+							$(this).addClass('book-active')
+						}else{
+							alert('最多选择5个标签')
+						}
+					}	
+				})
+			})
+			
+		</script>
+</html>

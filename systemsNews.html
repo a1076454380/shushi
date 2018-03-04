@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>消息</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					系统消息
+				</div>
+				<div class="topbar-next">
+					
+				</div>
+			</div>
+			<div class="content txt-circle message">
+				<div class="new-tab">
+					<div class="new-item user">
+						用户消息
+					</div>
+					<div class="new-item new-active system">
+						系统消息
+					</div>
+				</div>
+				<div class="lists">
+					<div class="list">
+						<div class="list-main">
+							<div class="list-title">
+								<div class="list-name">
+									系统提示:
+								</div>
+								<div class="list-time">
+									3天前
+								</div>
+							</div>
+							<div class="list-text">
+								你的作品获得一等奖,奖励已发放,请在礼物页面查看详情.需要帮助请联系客服QQ:123456789	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.new-tab','.user','noNews.html','')
+	</script>
+</html>

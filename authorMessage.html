@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>留言</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					留言
+				</div>
+				<div class="topbar-next">
+					
+				</div>
+			</div>
+			<div class="content txt-circle message">
+				<div class="lists">
+					<div class="list">
+						<div class="list-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="list-main">
+							<div class="list-title">
+								<div class="list-name">
+									未来520
+								</div>
+								<div class="list-vip">
+									<span>0</span>级
+								</div>
+							</div>
+							<div class="list-text">
+								Suspendisse hendrerit erat in dui congue ullamcorper. Ut accumsan urna nec gravida facilisis. Duis accumsan purus ut orci varius ultricies. In tempor commodo nibh ut consectetur. Vestibulum ultricies purus non nulla congue, et iaculis est laoreet. Donec ac lorem cursus, laoreet mi ac, finibus nisl. In consectetur, est non sagittis mollis, tortor mauris ultricies augue, in feugiat ipsum lectus ut metus. Praesent sed libero ultrices, pharetra lorem ac, blandit nisi. Maecenas ultricies, risus a porttitor tempus, nulla mi tempus erat, vitae consequat nisl turpis vitae tortor. Integer ligula turpis, venenatis ut volutpat accumsan, viverra quis est. Phasellus id augue a elit ullamcorper iaculis non nec purus. Sed et erat laoreet, faucibus dui eu, bibendum mi. Curabitur vel urna ut neque sagittis eleifend.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.init()
+		mui('.list').on('tap','.list-text',function(){
+			mytap('anthorRevert.html')
+		})
+		mui('.list').on('tap','.list-img',function(){
+			mytap('authorCenter.html')
+		})
+		mui('.list').on('tap','.list-title',function(){
+			mytap('authorCenter.html')
+		})
+	</script>
+</html>

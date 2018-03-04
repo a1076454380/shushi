@@ -1,0 +1,351 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;background: white;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+body,textarea,input,button,select,keygen,legend{font:.24rem arial,\5b8b\4f53;color:#333;outline:0;}
+a{color: #666666;}
+.level{margin-left: .2rem;font-size: .2rem;border: 1px solid red;border-radius: .5rem;padding:0 .1rem;height: .2rem;color: red;}
+/*工具类*/
+.clear{clear: both;}
+.Dflex{display: flex;}
+.Bsizing{box-sizing: border-box;}
+.wrap{width: 100%;height:auto;max-width: 750px;background: white;margin: 0 auto;}
+.topbar{width: 100%;height:1rem;line-height: 1rem;display: flex;position: fixed;top: 0;left: 0;z-index: 999;}
+.topbar-back,.topbar-next{width: 1.2rem;white-space: nowrap;font-size: .25rem;display: flex;align-content: center;justify-content: center;}
+.topbar-back{width:1.2rem;}
+.topbar-text{flex: 1;text-align: center;font-size: .35rem;}
+.content{width: 100%;height: auto;margin-top:1.1rem ;}
+/*注册*/
+.register-group{position: relative;}
+.register-group .code{position: absolute;width: 2rem;line-height: 1rem;height: 1rem;top: 0.5rem;right: 0;}
+.register-from{width: 100%;height: auto;margin-top: 1.5rem;display: flex;flex-direction: column;align-items: center;}
+.register-from input[type='text']{width: 7rem;height: 1rem;padding-left:0 05rem;box-sizing: border-box;margin-top: 0.5rem;}
+.register-land{display: flex;}
+.register-land input{margin: 0 0.2rem 0 0.2rem;width:3rem;}
+.registerqq{width: 1rem;height: 1rem;display: flex;justify-content: center;align-content: center;border-radius: 50%;overflow: hidden;margin: 0.5rem;}
+.registerqq img{width: 1rem;height: 1rem;}
+/*注册协议*/
+.agree-group{padding: 0 0.2rem 0 0.2rem;}
+.agree-title{font-weight: bold;line-height: 0.5rem;font-size: 0.3rem;color: #666666;}
+.agree-text{font-size: 0.2rem;color: #B6B6B6;}
+/*登录*/
+.land-password{display: flex;justify-content: flex-end;width: 7rem;font-size: .25rem;padding-bottom: .1rem;}
+.land-submit{width: 7rem!important;}
+/*书友圈*/
+.txt-circle .mui-scroll{display: flex;width: 100%!important;height: auto!important;}
+.circle-search{width: 100%;height:.8rem;}
+.circle-search form,.index form{position: relative;}
+.circle-search input[type='text'],.index input[type='text']{width:95%!important;border-radius: .2rem!important;border: 1px solid gainsboro!important;margin: .1rem auto auto 2.5%;padding-left: .8rem;box-sizing: border-box;height: .5rem;}
+.circle-search input[type='submit'],.index input[type='submit']{position: absolute!important;top: .2rem;left: .35rem;background: url(../img/search.png) no-repeat;background-size:cover;width: .35rem;height: .35rem;padding: 0;border: 0;}
+.advertising,.advertising img{width: 100%;height: auto;}
+.txt-circle .tabbar{display: flex;width: 100%;}
+.txt-circle .tabbar-item{flex: 1;display: flex;justify-content: center;align-items: center;}
+.txt-circle .tabbar-active{color:#007aff;border-bottom: 1px solid #007aff;height: .8rem;}
+.txt-circle .lists{display: flex;flex-direction: column;width: 7.2rem;margin: .2rem auto;}
+.txt-circle .list{width: 100%;display: flex;align-items: center;flex-wrap: wrap;}
+.txt-circle .list-img{width: 1rem;height: 1rem;border-radius: 50%;overflow: hidden;}
+.txt-circle .list-img img{width: 100%;height: 100%;}
+.txt-circle .list-main{flex: 1;padding-left: .2rem;}
+.txt-circle .list-title{display: flex;}
+.txt-circle .list-text{font-size: .2.5rem;line-height: .4rem;height: 1.2rem;overflow: hidden;}
+.txt-circle .list-title div{overflow: hidden;font-size: .35rem;line-height: .5rem;}
+.txt-circle .list-name{width: 1.7rem;}
+.txt-circle .list-vip{width: .7rem;}
+.txt-circle .list-chao{border: 1px solid gainsboro;border-radius: .4rem;padding: 0 .2rem 0 .2rem;}
+.txt-circle .list-imgbox{width: 100%;display: flex;}
+.txt-circle .list-imgbox a{display: flex;flex: 1;overflow: hidden;justify-content: center;margin-top: .2rem;}
+.txt-circle .list-imgbox img{width: 1.5rem;height: 1.5rem;}
+.txt-circle .list-ratings{width: 100%;display: flex;border-bottom:1px solid gainsboro ;height: .5rem;line-height: .5rem;margin-top: .2rem;}
+.txt-circle .list-ratings div{flex: 1;font-size: .2rem;display: flex;align-items: center;}
+.txt-circle .list-collect{justify-content: center;}
+.txt-circle .list-answer{justify-content: flex-end;}
+/*帖子详情*/
+.txt-detail .list-title{height: .8rem;align-items: center;}
+.txt-detail .list-avatar{width: .5rem;height: .5rem;border-radius: 50%;overflow: hidden;}
+.txt-detail .list-avatar img{width: 100%;height: 100%;}
+.txt-detail .list-text{height: auto;}
+.txt-detail .list-ratings{border-top: 0;}
+.txt-detail .list-ratins,.revert .list-ratins{display: flex;flex-direction: column;width: 100%;height: auto;padding-top: .5rem;}
+.txt-detail .rating-detail,.revert .rating-detail{line-height: .5rem;}
+/*作者中心*/
+.authorcenter .author-avatar{width: 100%;height: 4rem;display: flex;align-items: center;justify-content: center;}
+.authorcenter .author-avatar img{width: 2rem;height: 2rem;border-radius: 50%;}
+.authorcenter .author-name{display: flex;height: .5rem;align-items: center;justify-content: center;}
+.authorcenter .topname{position: relative;bottom: .5rem;}
+.authorcenter .author-collect{border-top: 1px solid gainsboro;border-bottom: 1px solid gainsboro;display: flex;flex-direction: column;align-items: center;}
+.authorcenter .collect-list{width: 6.5rem;border-bottom: 1px solid gainsboro;height: .8rem;display: flex;align-items: center;justify-content: space-between;}
+.authorcenter .collect-list:last-of-type{border-bottom: 0;}
+.authorcenter .author-works{display: flex;flex-direction: column;align-items: center;width: 100%;justify-content: space-between;}
+.authorcenter .author-work{width: 7rem;border-bottom: 1px solid gainsboro;display: flex;margin-top: .2rem;padding-bottom: .2rem;}
+.authorcenter .work-img{width: 1.5rem;overflow: hidden;}
+.authorcenter .work-img img{width: 100%;height: 1rem;}
+.authorcenter .work-inform{margin-left: .1rem;}
+.authorcenter .work-collects{flex: 1}
+.authorcenter .work-collect{text-align: right;}
+/*留言*/
+.message .list{align-items: flex-start;margin-top: .2rem;border-bottom: .03rem solid gainsboro;padding-bottom: .2rem;}
+.message .list-text{height: auto;}
+.message .list-title{height: 1rem;line-height: .8rem;}
+.revert .list-title{justify-content: space-between;}
+.revert .list{border-bottom: 0;}
+.revert .revert-hr{display: flex;width: 7rem;align-content: center;justify-content: space-between;margin: 0 auto;height: .5rem;line-height: .5rem;color: #999999;}
+.revert .hr{flex: 1;;overflow: hidden;}
+.revert .hr-num{padding:0 .04rem;border: .03rem solid gainsboro;border-radius: .4rem;font-size: .25rem;}
+.revert .list-ratins{width: 6.5rem;margin: 0 auto;}
+.revert .rating-form,.txt-detail .rating-form{width: 7rem;margin: .2rem auto 0;display: flex;flex-direction: column;align-items:flex-end;}
+.revert textarea,.txt-detail textarea{height: .2rem;width: 100%;margin-bottom: .2rem;padding: .2rem;}
+/*发布帖子*/
+.postS{color: white;width:2rem;height:.5rem!important;line-height: .5rem!important;padding: 0!important;top: .25rem;right: .1rem;}
+.topbar .mui-icon{display: flex;align-items: center;}
+#openPopover{display: flex;width: 100%;height:.8rem;justify-content: space-between;align-content: center;width: 7rem;margin: 0 auto;border-bottom: 1px solid gainsboro;}
+#openPopover div{line-height: .8rem;}
+.post input[type='text']{width:7rem;margin: .2rem auto;display: block;}
+.post textarea{width:7rem;margin: .2rem auto;display: block;height: 2rem;padding: .2rem;}
+/*搜索*/ 
+.search .author-works{padding: 0;}
+/*书籍*/
+.books .book-img{width: 100%;height: auto;}
+.books .book-img img{width: 100%;height: 5rem;}
+.books .book-name{width: 100%;text-align: center;font-size: .5rem;font-weight: bold;line-height: 2rem;height: 1.5rem;position: relative;}
+.books .book-anthor{width: 100%;text-align: center;font-size: .3rem;height:.8rem;display: flex;justify-content: center;align-content: ;}
+.books .book-operation{width: 7rem;display: flex;justify-content: space-between;margin: 0 auto;}
+.books .book-operation div{width: 3rem;height: .8rem;border-radius: .4rem;border: 1px solid gainsboro;display: flex;justify-content: center;align-items: center;}
+.books .book-directory{width: 7rem;margin: 0 auto;display: flex;justify-content: space-between;line-height: .8rem;height: .8rem;border-top: 1px solid gainsboro;border-bottom: 1px solid gainsboro;margin-top: .3rem;}
+.books .book-advert{width:7rem;height: auto;margin: 0.2rem auto;}
+.books .book-advert img{width: 100%;height: 2rem;}
+.books .book-profile{width:7rem;height: auto;margin: 0 auto;border: 1px solid gainsboro;padding: .1rem;}
+.books .profile-detail{padding-bottom: .5rem;}
+.books .profile-nav{display: flex;flex-wrap: wrap;}
+.books .profile-nav div{border: 1px solid gainsboro;padding: 0 .05rem;border-radius: .4rem;margin-right: .2rem;}
+.books .rating-title{width:7rem;line-height:.8rem ;margin: 0 auto;}
+.books .list-text{height: 1.6rem;}
+.books .rating-more{border: 1px solid gainsboro;border-radius: .4rem;text-align: center;height: .8rem;line-height: .8rem;width: 6.8rem;margin:  0 auto;}
+.books .signUp{font-size: .2rem;color:red;position: absolute;top: 0.8rem;left: .5rem;border: 1px solid red;border-radius: .4rem;height: .5rem;line-height: .5rem;padding: 0 .2rem;}
+.books .signDown{left:6rem;}
+.books .alert-bottom{position: fixed;bottom: 0;left: 0;width: 100%;height: auto;border-top: 1px solid gainsboro;overflow: hidden;display: none;}
+.books .alert-top{width: 7rem;height: .8rem;border-bottom: .02em solid gainsboro;display: flex;justify-content: space-between;align-items: center;margin: 0 auto;}
+.books .alert-top span{width: 1rem;height: .5rem;border: 1px solid gainsboro;border-radius: .1rem;display: flex;justify-content: center;align-items: center;}
+.books .alert-main{width: 100%;height: auto;display: flex;flex-wrap: wrap;padding-left: .2rem;}
+.books .alert-item{width: 1.8rem;display: flex;flex-direction: column;align-items: center;justify-content: center;margin: .2rem 0;}
+.books .alert-item img{width: 1rem;height: 1rem;}
+.books .alert-item span{margin-top: .2rem;font-size: .25rem;}
+.books .alert-bott{display: flex;justify-content: space-between;width: 7rem;margin: 0 auto;border-top: 1px solid gainsboro;height: 1.5rem;align-items: center;}
+.books .alert-bott .money{font-size: .4rem;display: flex;justify-content: center;flex-direction: column;padding-left: .2rem;}
+.books .submit{width: 4rem;height: 1rem;border: 1px solid gainsboro;border-radius: .1rem;display: flex;}
+.books .submit .num{border-right: 1px solid gainsboro;}
+.books .submit div{display: flex;justify-content: center;align-items: center;flex: 1;}
+/*书架/我的收藏*/
+.collect .author-works{padding:0}
+.collect .noCollect{width:2rem;border: 1px solid gainsboro;border-radius: .4rem;text-align: center;padding: .1rem .2rem;white-space: nowrap;float: right;}
+/*章节列表*/
+.directory .directory-navbar{display: flex;position: absolute;top: 0;left: 0;width: 100%;top: 1rem;}
+.directory .nav-list{flex: 1;display: flex;justify-content: center;align-items: center;height: .8rem;}
+.directory .nav-avtive{border-bottom: .04rem solid gainsboro;}
+.directory .list-item{display: flex;width: 7rem;margin: 0 auto;height: .8rem;border-bottom: 1px solid gainsboro;align-items: center;justify-content: space-between;}
+.directory .list-name{width: 3rem;overflow: hidden;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.directory .list-num{width: :1rem;}
+.directory .directory-list{margin-top: 2rem;}
+/*阅读*/
+.read .read-bottom{position: fixed;transition: all 0.6s;bottom: -.8rem;left: 0;width: 100%;height: .8rem;border-top: 1px solid gainsboro;}
+.read .topbar{top: -1rem;transition: all 0.6s;}
+.read .content{margin: 0;padding: .2rem;}
+.read .content p{text-indent: 2em;margin-top: .1rem;}
+/*首页*/
+.index form{width: 6.5rem;position: relative;top: -.2rem}
+.index .circle{border-top:2px solid gainsboro;width: 75px;height: 75px;border-radius: 50%;display: flex;justify-content: center;align-items: center;}
+.index .news{flex: 1;display: flex;justify-content: center;align-items: center;}
+/*.index input[type='text']{margin: 0 0 0 .2rem;}*/
+.index input[type='submit']{top: .34rem;left: .3rem;}
+.index #slider img{width: 100%;height: 3rem;}
+.index .navbar{display: flex;flex-wrap: wrap;width: 100%;}
+.index .nav-item{flex: 1;display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: .2rem;font-size: .3rem;}
+.index .nav-item img{width: .6rem;margin-bottom: .1rem;}
+.index .menu{display: flex;width: 100%;border-top: 1px solid gainsboro;margin-top: .2rem;}
+.index .menu-item{flex: 1;display: flex;justify-content: center;align-items: center;height: .8rem;border-bottom: 1px solid gainsboro;}
+.index .index-content{display: flex;width: 100%;flex-wrap: wrap;padding-bottom: 1.5rem;}
+.index .index-img{width: 33%;justify-content: center;display: flex;margin-top: .2rem;flex-direction: column;align-items: center;}
+.index .index-img img{width: 70%;height: 2.2rem;margin-bottom: .1rem;}
+.index .bottombar{position: fixed;bottom: 0;left: 0;width: 100%;height: auto;align-items: flex-end;}
+.index .bottombar{display: flex}
+.index .bottom-item{width: 1.5rem;display: flex;justify-content: center;align-items: center;height: 1rem;border-top: 1px solid gainsboro;flex-direction: column;padding-bottom: .1rem;}
+.index .bottom-item .mui-icon{font-size: 20px;margin-bottom: .1rem;}
+.index .bottom-circle{flex: 1;border-top: 1px solid gainsboro;display: flex;justify-content: center;align-items: center;border-top-right-radius: 50%;border-top-left-radius: 50%;height: 1.2rem;}
+/*分类*/
+.nav .nav-title{text-align: center;font-size: .4rem;height: .8rem;line-height: 1rem;border-bottom: 1px solid gainsboro;width: 7rem;margin: 0 auto;}
+.nav .nav-main{display: flex;flex-wrap: wrap;}
+.nav .nav-item{width: 20%;margin: 2.5%;border: 1px solid gainsboro;border-radius: .4rem;display: flex;justify-content: center;align-items: center;}
+/*分类详情*/
+.nav-detail .author-works{padding: 0;}
+.nav-detail .work-collects{display: flex;flex-wrap: wrap;overflow: hidden;justify-content: flex-end;align-items: center;}
+.nav-detail .labelling{border-radius: .4rem;border: 1px solid gainsboro;height: .5rem;line-height: .5rem;margin-left: .1rem;padding: 0 .15rem;font-size: .3rem;}
+/*签到*/
+.signIn .signIn-text{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.signIn .signIn-item{width: 1.1rem;height:1.1rem;display: flex;flex-direction: column;align-items: center;border: 1px solid gainsboro;border-radius: 50%;margin: .2rem;justify-content: center;}
+.signIn .signIn-title{text-align: right;height: 1rem;line-height: 1rem;border-bottom: 1px solid gainsboro;width: 7rem;margin: 0 auto;}
+.signIn .signIn-item span{font-size: .2rem;}
+/*督察部*/
+.supervises .supervises-list{width: 100%;height: auto;padding-top: .2rem;}
+.supervises .supervises-item{display: flex;margin: .1rem auto;align-items: center;width: 7rem;}
+.supervises .supervises-item div{display: flex;align-items: center;}
+.supervises .supervises-num{width: .5rem;display: flex;justify-content: center;align-items: center;font-size: .4rem;height: .5rem;border-radius: 50%;border: 1px solid gainsboro;}
+.supervises .supervises-img{width: 1.5rem;}
+.supervises .supervises-img img{width: 100%;height: 1.5rem;}
+.supervises .supervises-name{width: 4rem;padding-left: .2rem;display: flex;justify-content: space-between;}
+.supervises .supervises-name02{flex: 1;justify-content: flex-end;}
+.supervises .supervises-name02 .agree{border: 1px solid gainsboro;padding: .1rem .2rem;border-radius: .1rem;}
+.supervises .supervises-form{width: 100%;height: .5rem;border-radius: .2rem;border: 1px solid gainsboro;overflow: hidden;align-items: center;}
+.supervises .supervises-form input[type='text']{padding: 0;margin: 0;border: 0;height: .5rem;line-height: .5rem;border: 0!important;flex: 1;}
+.supervises .supervises-form img{width: .4rem;height: .4rem;}
+/*督查详情*/
+.supervisesDetail .join{padding:.01rem .1rem ;height: .5rem;line-height: .5rem;margin-top: .25rem;position: relative;right: .2rem;}
+.supervisesDetail .supervisesDetail-header{display: flex;width: 7rem;margin: 0 auto;padding-top: .2rem;}
+.supervisesDetail-header .header-img{width: 33%;}
+.supervisesDetail-header .header-name{width: 45%;}
+.supervisesDetail-header .header-img img{width: 2rem;height: 2rem;border-radius: 50%;}
+.supervisesDetail-header .header-title{text-align: right;flex: 1;margin: .1rem auto;display: flex;justify-content: center;flex-direction: column;}
+.supervisesDetail .supervisesDetail-title{line-height: 1rem;font-size: .5rem;display: block;font-weight: bold;margin-top: .2rem;}
+.supervisesDetail .history{border: 1px solid gainsboro;border-radius: .4rem;text-align: center;padding: .1rem;margin-bottom: .1rem;white-space: nowrap;}
+.supervisesDetail .supervisesDetail-main{width: 7rem;margin: .1rem auto;border-bottom: 1px solid gainsboro;}
+.supervisesDetail .made-item{display: flex;width: 7rem;margin: 0 auto;border-bottom: 1px solid gainsboro;padding: .1rem 0;align-items: center;}
+.supervisesDetail .item-img{width: 1.5rem;}
+.supervisesDetail .seeall{width: 7rem;height: .6rem;border-radius: .1rem;display: flex;justify-content: center;align-items: center;border:1px solid gainsboro;margin: 0 auto;}
+.supervisesDetail .item-img img{width: 1.5rem;height: 1.5rem;}
+.supervisesDetail .item-name{flex: 1;font-size: .4rem;padding-left: .1rem;}
+.supervisesDetail .item-name span{font-size: .3rem;border: .03rem solid gainsboro;border-radius: .4rem;padding: .05rem .1rem;width: -webkit-fit-content;margin-top: .2rem;}
+.supervisesDetail .item-name block{font-size: .3rem;margin-bottom: .2rem;}
+/*历任组长*/
+.leader .leader-item{display: flex;justify-content:space-between;line-height: .8rem;width: 7rem;margin: 0 auto;border-bottom: 1px solid gainsboro;}
+.usercenter .topbar-next{display: flex;justify-content: center;}
+.pullOut{width: 6rem;line-height: .8rem;border-radius: .4rem;margin: .4rem auto;text-align: center;}
+/*用户信息*/
+.inform input[type='submit']{background: white;border: 1px solid gainsboro;border-radius:.2rem ;padding: .01rem .2rem;color: #666666;height: .5rem;margin: .25rem auto;}
+.inform{padding-top: .2rem;}
+.userinform .input-group{display: flex;width: 7rem;margin: 0 auto;border-bottom: 1px solid gainsboro;height: 1rem;align-items: center;position: relative;}
+.userinform .input-name{width: 1.8rem;}
+.userinform .input-text{flex: 1;display: flex;justify-content: flex-end;align-items: center;}
+.userinform .input-text input[type='file'],.userinform .input-text input[type='text']{width: 100%;height: .7rem;margin: 0;border: 0;text-align: right;padding: 0;}
+.userinform .input-text input[type='file']{background: rgba(0,0,0,0);z-index: 10;position: absolute;top: 0;left: .8rem;opacity: 0;}
+.userinform .myfile img{width: .8rem;height: .8rem;position: absolute;right: 0;top: 0;z-index: 1;}
+.userinform .male{margin-right: .2rem;}
+/*充值*/
+.recharge .recharge-main{display: flex;flex-wrap: wrap;justify-content: space-around;}
+.recharge .recharge-item{width: 40%;height: .8rem;margin-top: .5rem;border-bottom: 1px solid gainsboro;}
+.recharge .money{display: flex;justify-content: center;align-items: center;height: 2.5rem;}
+.recharge input[type='submit']{width: 5rem;margin: 0 auto;display: block;height: .8rem;line-height: .8rem;}
+/*收支记录*/
+.revenue .tab{display: flex;}
+.revenue .tab-item{flex: 1;display: flex;justify-content: center;align-items: center;height: .8rem;border-bottom: 1px solid gainsboro;}
+.revenue .tab-active{border-bottom: .04rem solid gainsboro;}
+.revenue .revenue-top{height: 1rem;display: flex;align-items: center;margin-top: .04rem;border-bottom: .03rem solid gainsboro;width: 7rem;margin: 0 auto;}
+.revenue .revenue-item{flex: 1;display: flex;justify-content: center;align-items: center;}
+.revenue .main-item{width: 7rem;margin: 0 auto;height: .8rem;display: flex;align-items: center;white-space: nowrap;font-size: .25rem;justify-content: center;}
+.revenue .revenue-main{border-bottom: 1px solid gainsboro;justify-content: space-around;display: flex;width: 7rem;margin: 0 auto;}
+.revenue .revenue-main .main-item:nth-of-type(2){display: flex;justify-content:center;}
+.revenue .revenue-more{width: 6rem;border: 1px solid gainsboro;margin: .2rem auto;border-radius: .2rem;display: flex;justify-content: center;align-items: center;height: .8rem;}
+/*提现*/
+.withdrawal .withdrawal-text{display: flex;justify-content: center;align-items: center;height: 3rem;font-size: .3rem;}
+.withdrawal .text02{height: .5rem;}
+.withdrawal .main-item{justify-content: flex-start;}
+.withdrawal .withdrawal-boo{justify-content: flex-end!important;}
+
+/*提现弹出窗口*/
+.withdrawal-alert{width: 60%;position: fixed;left: 20%;top: 2rem;border: .03rem solid gainsboro;padding-bottom: .2rem;display: none;}
+.withdrawal-alert .alert-top{height: 1.5rem;display: flex;justify-content: center;align-items: center;}
+.withdrawal-alert .alert-group{display: flex;justify-content: center;height: .5rem;align-items: center;}
+.withdrawal-alert .new-withdrawal{display: flex;justify-content: space-around;}
+.new-withdrawal input[type='submit'],.new-withdrawal .newwithdrawal{width: 1.5rem;height: .7rem;background: white;color: #666666;border-radius: .2rem;display: flex;justify-content: center;align-items: center;border: 1px solid gainsboro;margin-top: .2rem;}
+.withdrawal .money{width: 2rem;text-align: right;}
+/*提现账户添加*/
+.recordUser .recordUser-p{height: 2rem;display: flex;justify-content: center;align-items: center;}
+.recordUser input{width: 7rem;margin: 0 auto .2rem;display: block;}
+/*我的帖子*/
+.mypost .author-works{padding: 0;}
+.mypost .mypost-top{display: flex;}
+.mypost .mypost-item{flex: 1;height: .8rem;display: flex;justify-content: center;align-items: center;border-bottom: 1px solid gainsboro;}
+.mypost .post-active{border-bottom: .04rem solid gainsboro;}
+/*征文规则*/
+.rule{padding-top: .2rem;}
+.rule .rule-group{width: 6.5rem;margin:.2rem auto;border: 1px solid gainsboro;}
+.rule .rule-top{box-shadow: 0 1px 6px #ccc;border-bottom: 1px solid gainsboro;width: 100%;height: .6rem;display: flex;justify-content: center;align-items: center;}
+.rule .rule-main{padding: .3rem 0;font-size: .25rem;display: flex;justify-content: flex-end;}
+.rule li{list-style-type:cjk-ideographic;width: 6rem;}
+.userinform .work-status{border: 1px solid gainsboro;border-radius: .2rem;height: .5rem;line-height: .5rem;padding: 0 .2rem;}
+/*新书创作*/
+.create-bottom{width: 5rem;border: 1px solid gainsboro;border-radius: .4rem;height: .8rem;display: flex;justify-content: center;align-items: center;margin: .2rem auto;}
+.newbook .topbar-next{display: flex;justify-content: center;}
+.newbook .author-avatar{height: 4rem;}
+.newbook .author-avatar img{border-radius:0 ;height: 100%;}
+.newbook .author-name{display: flex;height: 1rem;}
+.newbook .newbook-name{width: 2rem;text-align: center;border-left: .03rem solid gainsboro;border-right: .03rem solid gainsboro;}
+.newbook .newbook-data,.newbook .newbook-setting{width: 2rem;text-align: center;}
+.book-num{margin-left: .2rem;}
+.createdbook{padding-top: .4rem;}
+.createdbook .cbook-img{width: 6rem;height: 4rem;position: relative;margin: 0rem auto;}
+.createdbook .cbook-img img{width: 6rem;height: 4rem;position: absolute;top: 0;left: 0;}
+.createdbook .cbook-img input{width: 6rem;height: 4rem;display: block;position: absolute;top: 0;left: 0;z-index: 5;opacity: 0;background: rgba(0,0,0,0);}
+.createdbook .cbook-main input[type='text'],.createdbook .cbook-main input[type='button']{width: 7rem;margin: .2rem auto;border: 0;border-bottom: 1px solid gainsboro;display: block;}
+.createdbook .nav-group{display: flex;flex-wrap: wrap;justify-content: space-around;}
+.createdbook .book-nav{width: 2rem;display: flex;justify-content: center;height: .8rem;align-items: center;border-radius: .4rem;border: 1px solid gainsboro;margin-bottom: .3rem;}
+.createdbook .book-nav input{display: none;}
+.createdbook input[type='submit']{width:100%;display: block;margin: 0 auto;border-radius: 0;position: fixed;bottom: 0;left: 0;height: 50px;}
+/*创建新章节*/
+.chapters textarea,.chapters{height: 100%;}
+/*章节保存*/
+.chapters .now,.chapters .set{width: 5rem;height: .8rem;border: 1px solid gainsboro;border-radius: .2rem;display: flex;justify-content: center;align-items: center;margin: 0 auto;}
+.chapters .now{margin-top:4rem;}
+.chapters .set{margin-top: 1rem;}
+.directory-p{justify-content: center!important;font-size: .3rem;}
+/*消息*/
+.new-tab{width: 100%;display: flex;height: 1rem;}
+.new-tab .new-item{flex: 1;display: flex;justify-content: center;align-items: center;border-bottom: 1px solid gainsboro;}
+.list-time{flex: 1;text-align: right;}
+.news .list-name{display: flex;flex-direction: column;}
+.news .list-name .new-date{font-size: .25rem;color: #999999;}
+/*参赛详情02*/
+.Competition-item{width: 100%;width: 7rem;margin: .2rem auto;display: flex;justify-content: space-between;}
+.item-num{display: flex;align-items: center;}
+.item-num span{width: .5rem;height: .5rem;border: 1px solid gainsboro;display: flex;justify-content: center;align-items: center;border-radius: 50%;}
+.item-name{display: flex;flex-direction: column;width: 4rem;padding-left: .2rem;justify-content: center;}
+.item-sett{display: flex;flex-direction: column;width: 3rem;}
+.item-title{font-size: .4rem;font-weight: bold;}
+.item-subtitle{font-size: .25rem;color: #999999;margin-top: .2rem;}
+.item-sett{align-items: flex-start;}
+.item-arr{display: flex;align-items: center;}
+.Competition-item .mui-icon{font-size: 20px;}
+/*主体换色*/
+.topbar-back,.topbar-next,.topbar-back,.topbar-text,.pullOut,.mui-bar,.mui-title,.mui-bar-nav.mui-bar .mui-icon,.signIn .signIn-active,.join,input[type=submit],.new-tab .new-active,#com button,.createdbook .book-active,.createdbook input[type='submit'],.inform input[type='submit'],.index .menu-active,.create-bottom{background-color: #8ED1F5;color: white;border: 0;}
+.mui-popover-arrow{background: 0;}
+
+/*bug*/
+.dltabbar .topbar{height: .6rem;}
+.dltabbar .news img{width: .5rem;height: .5rem;}
+.dltabbar input[type='submit']{position: relative;z-index: 99;left: 1.1rem;}
+.dltabbar input[type='text']{margin: 0;height: .4rem;position: relative;width: 85%!important;left: .9rem;}
+.dltabbar .bottom-item .mui-icon img{width: .5rem;height: .5rem;position: relative;top: .15rem;}
+.dltabbar .bottom-circle img{width: .8rem;height: .8rem;}
+.usercenter .topbar-next img{width: .5rem;height: .5rem;}
+.usercenter .collect-list img{width: .4rem;height: .4rem;margin-right: .1rem;}
+.collect-name{height: .78rem;display: flex;align-items: center;}
+.dltete .mui-icon img{width: .5rem;height: .5rem;}
+.dltete .collect-name img{margin-right:.1rem;position: relative;top: .05rem;}
+.dltitle{height: 1.2rem!important;}
+.dltitle .list-avatar{width: 1rem;height: 1rem;}
+.dltitle .list-name{display: flex;flex-direction: column;padding-left: .2rem;}
+.dltitle .list-chao{background: black;color: white;}
+/*编辑*/
+#content{margin-top: 1rem;}
+.edui-container{border: 0;box-shadow:2px 2px 5px white}
+.uetext{border: 0;padding: .1rem;}
+.ranking{border-bottom: 1px solid gainsboro;height: .8rem;}

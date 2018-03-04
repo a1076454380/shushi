@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>帖子详情</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					投稿详情
+				</div>
+				<div class="topbar-next">
+					举报楼主
+				</div>
+			</div>
+			<div class="content txt-circle txt-detail">
+				<div class="lists">
+					<div class="list">
+						<div class="list-main">
+							<div class="list-title dltitle">
+								<div class="list-avatar">
+									<img src="img/advertising.jpg"/>
+								</div>
+								<div class="list-name">
+									<span>未来520</span>
+									<span>0级</span>
+								</div>
+								<div class="list-chao">
+									<span>
+										大督查
+									</span>
+								</div>
+							</div>
+							<div class="list-text">
+								Suspendisse hendrerit erat in dui congue ullamcorper. Ut accumsan urna nec gravida facilisis.
+							</div>
+						</div>
+						<div class="list-imgbox">
+							<a href="">
+								<img src="img/advertising.jpg"/>
+							</a>
+							<a href="">
+								<img src="img/advertising.jpg"/>
+							</a>
+							<a href="">
+								<img src="img/advertising.jpg"/>
+							</a>
+							<a href="">
+								<img src="img/advertising.jpg"/>
+							</a>
+						</div>
+						<div class="list-ratings">
+							<div class="list-time">
+								66阅读
+							</div>
+							<div class="list-collect">
+								80喜欢
+							</div>
+							<div class="list-answer">
+								3个回复
+							</div>
+						</div>
+						<div class="rating-form">
+							<input type="text" name="" id="" value="" />
+							<input type="submit" name="" id="" value="回复" />
+						</div>
+						<div class="list-ratins">
+							<div class="rating-detail">
+								未来520:写的不错
+							</div>
+							<div class="rating-detail">
+								朱海青6回复未来520:我也觉得不错
+							</div>
+							<div class="rating-detail">
+								海城:文笔很好
+							</div>
+							<div class="rating-detail">
+								未来520回复海城:构思也不错
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.lists','.list-title','authorCenter.html','')
+		mui('.topbar').on('tap','.topbar-next',function(){
+			var btnArray = [
+			{title:"垃圾广告"},
+			{title:"色情内容"},
+			{title:"违反法律"},
+			{title:"抄袭"},
+			{title:"其他"}];
+			plus.nativeUI.actionSheet( {
+				title:"举报原因",
+				cancel:"取消", 
+				buttons:btnArray
+				}, 
+				function(e){
+					mui.alert('我们已收到您的举报','举报反馈')
+			} );
+		})
+	</script>
+</html>

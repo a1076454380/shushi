@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>消息</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					用户消息
+				</div>
+				<div class="topbar-next">
+					
+				</div>
+			</div>
+			<div class="content txt-circle message news">
+				<div class="new-tab">
+					<div class="new-item new-active user">
+						用户消息
+					</div>
+					<div class="new-item system">
+						系统消息
+					</div>
+				</div>
+				<div class="lists">
+					<div class="list">
+						<div class="list-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="list-main">
+							<div class="list-title">
+								<div class="list-name">
+									<span>未来520</span>
+									<span class="new-date">
+										3天前
+									</span>
+								</div>
+								<div class="list-vip">
+									<span>0</span>级
+								</div>
+								<div class="list-time">
+									回复
+								</div>
+							</div>
+							<div class="list-text">
+								enas ultricies, risus a porttitor tempus, nulla mi tempus erat, vitae consequat nisl turpis vitae tortor. Integer ligula turpis, venenatis ut volutpat accumsan, viverra quis est. Phasellus id augue a elit ullamcorper iaculis non nec purus. Sed et erat laoreet, faucibus dui eu, bibendum mi. Curabitur vel urna ut neque sagittis eleifend.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.new-tab','.system','systemsNews.html','')
+		mytapp('.list','.list-text','PostDetail.html','')
+		mytapp('.list','.list-img','usercanter.html','')
+		mui('.list-title').on('tap','.list-time',function(){
+			mui.prompt("","请输入回复内容","回复",["确定","取消"],function(e){  
+	           if(e.index == 0){  
+	               mui.toast("回复成功");  
+	           }else{  
+	               mui.toast("取消回复");  
+	           }  
+	       })  
+		})
+	</script>
+</html>

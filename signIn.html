@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap index">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					今日签到
+				</div>
+				<div class="topbar-next">
+					
+				</div>
+			</div>
+			<div class="content signIn">
+				<div class="signIn-title">
+					签到 
+				</div>
+				<div class="signIn-text">
+					<div class="signIn-item signIn-active">
+						1
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item signIn-active">
+						2
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item signIn-active">
+						3
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item signIn-active">
+						4
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						5
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						6
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						7
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						8
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						9
+						<span>
+							1墨水
+						</span>
+					</div>
+					<div class="signIn-item">
+						10
+						<span>
+							1墨水
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mui('.wrap').on('tap', '.txtcircle', function() {
+			mytap('txtcircle.html')
+		})
+		mui('#slider').slider({
+			interval: 3000
+		});
+	</script>
+
+</html>

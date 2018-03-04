@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>斗破苍穹</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span  class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					斗破苍穹
+				</div>
+				<div class="topbar-next">
+					举报
+				</div>
+			</div>
+			<div class="content books txt-circle message">
+				<div class="book-img">
+					<img src="img/advertising.jpg"/>
+				</div>
+				<div class="book-name">
+					<span class="signUp">已签约</span>斗破苍穹
+					<span class="signUp signDown">送礼物</span>
+				</div>
+				<div class="book-anthor">
+					<span>作者：天蚕</span><span class="level">10</span>
+				</div>
+				<div class="book-anthor">
+					335阅读 · 665字·55分享
+				</div>
+				<div class="book-operation">
+					<div class="book-collect">
+						<span style="margin-right: .1rem;">
+							335
+						</span>  收藏
+					</div>
+					<div class="read-book">
+						阅读
+					</div>
+				</div>
+				<div class="book-directory">
+					<div>
+						更新至16章
+					</div>
+					<div>
+						2个月前<span class="mui-icon mui-icon-forward"></span>
+					</div>
+				</div>
+				<div class="book-advert">
+					<img src="img/advertising.jpg"/>
+				</div>
+				<div class="book-profile">
+					<div class="profile-detail">
+						作品简介：因祸得福是阿姨的方式范德萨回复的撒
+					</div>
+					<div class="profile-nav">
+						<div>
+							玄幻
+						</div>
+						<div>
+							科幻
+						</div>
+						<div>
+							热血
+						</div>
+					</div>
+				</div>
+				<div class="rating-title">
+					作品评论<span>(1182)</span>
+				</div>
+				<div class="lists">
+					<div class="list">
+						<div class="list-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="list-main">
+							<div class="list-title">
+								<div class="list-name">
+									未来520
+								</div>
+								<div class="list-vip">
+									<span>0</span>级
+								</div>
+							</div>
+							<div class="list-text">
+								Suspendisse hendrerit erat in dui congue ullamcorper. Ut accumsan urna nec gravida facilisis. Duis accumsan purus ut orci varius ultricies. In tempor commodo nibh ut consectetur. Vestibulum ultricies purus non nulla congue, et iaculis est laoreet. Donec ac lorem cursus, laoreet mi ac, finibus nisl. In consectetur, est non sagittis mollis, tortor mauris ultricies augue, in feugiat ipsum lectus ut metus. Praesent sed libero ultrices, pharetra lorem ac, blandit nisi. Maecenas ultricies, risus a porttitor tempus, nulla mi tempus erat, vitae consequat nisl turpis vitae tortor. Integer ligula turpis, venenatis ut volutpat accumsan, viverra quis est. Phasellus id augue a elit ullamcorper iaculis non nec purus. Sed et erat laoreet, faucibus dui eu, bibendum mi. Curabitur vel urna ut neque sagittis eleifend.
+							</div>
+						</div>
+					</div>
+					<div class="list">
+						<div class="rating-more">
+							查看全部评论
+						</div>
+					</div>
+				</div>
+				<div class="alert-bottom">
+					<div class="alert-top">
+						<div>
+							余额:655钢镚
+						</div>
+						<div class="set-money">
+							<span>
+								充值
+							</span>
+						</div>
+					</div>
+					<div class="alert-main">
+						<div class="alert-item">
+							<img src="img/cbd.jpg"/>
+							<span>一张推荐票</span>
+						</div>
+						<div class="alert-item">
+							<img src="img/cbd.jpg"/>
+							<span>5钢镚</span>
+						</div>
+						<div class="alert-item">
+							<img src="img/cbd.jpg"/>
+							<span>一张推荐票</span>
+						</div>
+						<div class="alert-item">
+							<img src="img/cbd.jpg"/>
+							<span>5钢镚</span>
+						</div>
+						<div class="alert-item">
+							<img src="img/cbd.jpg"/>
+							<span>一张推荐票</span>
+						</div>
+					</div>
+					<div class="alert-bott">
+						<div class="money">
+							5钢镚
+						</div>
+						<div class="submit">
+							<div class="num">
+								1个
+							</div>
+							<div>
+								送礼
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.lists','.rating-more','bookAllRatings.html','')
+		mytapp('.content','.book-directory','directory.html','')
+		mytapp('.book-operation','.book-collect','bookCollect.html','')
+		mytapp('.book-operation','.read-book','read.html','')
+		mytapp('.profile-nav','div','nav.html','')
+		mytapp('.alert-bottom','.set-money','recharge.html','')
+		mui('.book-name').on('tap','.signDown',function(){
+			var boo=$('.alert-bottom').css('display')
+			if(boo=='none'){
+				$('.alert-bottom').show()
+			}else{
+				$('.alert-bottom').hide()
+			}
+			
+		})
+		mui('.topbar').on('tap','.topbar-next',function(){
+			var btnArray = [
+			{title:"垃圾广告"},
+			{title:"色情内容"},
+			{title:"违反法律"},
+			{title:"抄袭"},
+			{title:"其他"}];
+			plus.nativeUI.actionSheet( {
+				title:"举报原因",
+				cancel:"取消", 
+				buttons:btnArray
+				}, 
+				function(e){
+					mui.alert('我们已收到您的举报','举报反馈')
+			} );
+		})
+		$('.content').click(function(){
+			$('.alert-bottom').hide()
+		})
+	</script>
+	
+</html>

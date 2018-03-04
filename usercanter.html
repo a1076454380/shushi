@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap usercenter">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					个人资料
+				</div>
+				<div class="topbar-next">
+					<span class="mui-icon">
+						<img src="img/dxin.png"/>
+					</span>
+				</div>
+			</div>
+			<div class="content authorcenter">
+				<div class="author-avatar">
+					<img src="img/advertising.jpg" />
+				</div>
+				<div class="author-name">
+					昵称:未来
+				</div>
+				<div class="author-collect">
+					<div class="collect-list recharge">
+						<div class="collect-name">
+							<img src="img/recharge.png"/>
+							钢镚充值
+						</div>
+						<div class="collect-num">
+							28钢镚
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list revenue">
+						<div class="collect-name">
+							<img src="img/revenue.png"/>
+							我的收入
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list mydown">
+						<div class="collect-name">
+							<img src="img/down.png"/>
+							我的下载
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list mycollect">
+						<div class="collect-name">
+							<img src="img/book.png"/>
+							我的书架
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list mypost">
+						<div class="collect-name">
+							<img src="img/post.png"/>
+							我的帖子
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list setting">
+						<div class="collect-name">
+							<img src="img/setting.png"/>
+							设置
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+				</div>
+				<div class="pullOut">
+					退出登录
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.topbar','.topbar-next','noNews.html','')
+		mytapp('.authorcenter','.author-avatar','userInform.html','')
+		mytapp('.authorcenter','.author-name','userInform.html','')
+		mytapp('.author-collect','.setting','setting.html','')
+		mytapp('.author-collect','.recharge','recharge.html','')
+		mytapp('.author-collect','.mypost','myPost.html','')
+		mytapp('.author-collect','.revenue','revenue.html','')
+		mytapp('.author-collect','.mydown','download.html','')
+		mytapp('.author-collect','.mycollect','bookCollect.html','')
+	</script>
+</html>

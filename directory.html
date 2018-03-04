@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>斗破苍穹</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					斗破苍穹
+				</div>
+				<div class="topbar-next">
+					我的书架
+				</div>
+			</div>
+			<div class="content directory">
+				<div class="directory-navbar">
+					<div class="nav-list nav-avtive">
+						1-20
+					</div>
+					<div class="nav-list">
+						21-40
+					</div>
+					<div class="nav-list">
+						41-60
+					</div>
+				</div>
+				<div class="directory-list">
+					<div class="list-item">
+						<div class="list-name">
+							第二十章   黄蓉与郭靖...
+						</div>
+						<div class="list-num">
+							333字
+						</div>
+						<div class="list-data">
+							2017/12/1
+						</div>
+						<div class="list-arr">
+							<span class="mui-icon mui-icon-forward"></span>
+						</div>
+					</div>
+					<div class="list-item">
+						<div class="list-name">
+							第二十一章   黄蓉与郭靖...
+						</div>
+						<div class="list-num">
+							333字
+						</div>
+						<div class="list-data">
+							2017/12/1
+						</div>
+						<div class="list-arr">
+							<span class="mui-icon mui-icon-forward"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.directory-list','.list-item','read.html','')
+		mytapp('.topbar','.topbar-next','bookCollect.html','')
+		
+	</script>
+	
+</html>

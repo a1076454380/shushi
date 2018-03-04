@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>已保存</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<form action="" method="post">
+				<div class="topbar">
+					<div class="topbar-back">
+						<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+					</div>
+					<div class="topbar-text">
+						已保存
+					</div>
+					<div class="topbar-next">
+						<span class="mui-icon mui-icon-closeempty"></span>
+					</div>
+				</div>
+				<div class="content chapters">
+					<div class="now">
+						立即发布
+					</div>
+					<div class="set">
+						定时发布
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mui('.chapters').on('tap','.now',function(){
+			mui.alert('发布成功','发布状态','确定')
+		})
+		mytapp('.topbar','.topbar-next','newchapters.html','')
+		mui('.chapters').on('tap','.set',function(){
+			var dtPicker = new mui.DtPicker({
+				type:'date'
+			});
+		    dtPicker.show(function (selectItems) { 
+		        console.log(selectItems.y);//{text: "2016",value: 2016} 
+		        console.log(selectItems.m);//{text: "05",value: "05"} 
+		    })
+		})
+		
+	</script>
+</html>

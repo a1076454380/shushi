@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/activity.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">活动</h1>
+		</header>
+		<div class="mui-content cell">
+		    <ul class="mui-table-view">
+		            <li class="mui-table-view-cell zwen">
+		                <a class="mui-navigate-right ">
+		                    题材征文
+		                </a>
+		            </li>
+		            <li class="mui-table-view-cell jlong">
+		                <a class="mui-navigate-right">
+		                    故事接龙
+		                </a>
+		            </li>
+		            <li class="mui-table-view-cell gshi">
+		                <a class="mui-navigate-right ">
+		                    百字故事
+		                </a>
+		            </li>
+		            <li class="mui-table-view-cell dcha">
+		                <a class="mui-navigate-right">
+		                    督查审核系统
+		                </a>
+		            </li>
+		        </ul>
+		</div>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			mytapp('.mui-table-view','.zwen','Subject.html','Competition.html')
+			mytapp('.mui-table-view','.gshi','Subject02.html','Competition02.html')
+			mytapp('.mui-table-view','.jlong','Subject03.html','Competition03.html')
+			mytapp('.mui-table-view','.dcha','Inspection.html','')
+		</script>
+	</body>
+</html>

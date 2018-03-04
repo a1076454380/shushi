@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>作者中心</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap newbook dltete">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-icon mui-action-back mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					斗破
+				</div>
+				<div class="topbar-next">
+					<span class="mui-icon">
+						<img src="img/deleting.png"/>
+					</span>
+				</div>
+			</div>
+			<div class="content authorcenter">
+				<div class="author-avatar">
+					<img src="img/advertising.jpg" />
+				</div>
+				<div class="author-name">
+					<div class="newbook-data">
+						大数据
+					</div>
+					<div class="newbook-name">
+						斗破苍穹
+					</div>
+					<div class="newbook-setting">
+						设置
+					</div>
+				</div>
+				<div class="author-collect">
+					<div class="collect-list">
+						<div class="collect-name">
+							<span class="mui-icon">
+								<img src="img/newbook.png"/>
+							</span>创建新章节
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list list">
+						<div class="collect-name">
+							第八十章
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list list">
+						<div class="collect-name">
+							第七十九章
+						</div>
+						<div class="collect-num">
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+					<div class="collect-list all">
+						<div class="collect-name">
+							全部章节
+							
+						</div>
+						<div class="collect-num book-num">
+							<span>总章节55章</span>
+							<span>总字数55550字</span>
+							<span class="mui-icon mui-icon-arrowright"></span>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.author-collect','.collect-list','ue.html','')
+		mytapp('.author-name','.newbook-setting','createbook.html','')
+		mytapp('.author-collect','.all','directory.html','')
+		mytapp('.topbar','.topbar-next','Recycle.html','')
+		mytapp('.author-name','.newbook-data','readData.html','')
+	</script>
+</html>

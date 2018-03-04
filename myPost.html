@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>我的帖子</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					我的帖子
+				</div>
+				<div class="topbar-next">
+
+				</div>
+			</div>
+			<div class="content authorcenter mypost">
+				<div class="mypost-top">
+					<div class="mypost-item post-active">
+						我的帖子
+					</div>
+					<div class="mypost-item">
+						我回复的
+					</div>
+				</div>
+				<div class="author-works">
+					<div class="author-work">
+						<div class="work-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="work-inform">
+							<div class="work-name">
+								书名：老人与海
+							</div>
+							<div class="work-author">
+								作者：朱海青
+							</div>
+						</div>
+						<div class="work-collects">
+							<div class="work-collect">
+								666阅读
+							</div>
+							<div class="work-collect">
+								666收藏
+							</div>
+							<div class="work-collect">
+								666评论
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.author-works','.author-work','PostDetail.html','')
+	</script>
+</html>

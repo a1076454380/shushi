@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收支记录</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="topbar">
+					<div class="topbar-back">
+						<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+					</div>
+					<div class="topbar-text">
+						收支记录
+					</div>
+					<div class="topbar-next">
+						提现
+					</div>
+			</div>
+			<div class="content revenue">
+					<div class="tab">
+						<div class="tab-item tab-active">
+							收入记录
+						</div>
+						<div class="tab-item">
+							支出记录
+						</div>
+					</div>
+					<div class="revenue-top">
+						<div class="revenue-item">
+							日期
+						</div>
+						<div class="revenue-item">
+							金额
+						</div>
+						<div class="revenue-item">
+							书名
+						</div>
+						<div class="revenue-item">
+							来源
+						</div>
+					</div>
+					<div class="revenue-main">
+						<div class="main-item">
+							2017-01-25
+						</div>
+						<div class="main-item">
+							+0.1币
+						</div>
+						<div class="main-item">
+							《老人与海》
+						</div>
+						<div class="main-item">
+							张三
+						</div>
+					</div>
+					<div class="revenue-main">
+						<div class="main-item">
+							2017-01-25
+						</div>
+						<div class="main-item">
+							+0.1币
+						</div>
+						<div class="main-item">
+							《老人与海》
+						</div>
+						<div class="main-item">
+							张三
+						</div>
+					</div>
+					<div class="revenue-more">
+						查看更多
+					</div>
+			</div>
+		</div>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			mytapp('.topbar','.topbar-next','withdrawal.html','')
+		</script>
+	</body>
+	
+</html>

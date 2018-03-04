@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrap supervisesDetail">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					督察部
+				</div>
+				<div class="topbar-next">
+					<div class="join">
+						<span>申请加入</span>
+						<span style="display: none;">申请退出</span>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="supervisesDetail-header">
+					<div class="header-img">
+						<img src="img/advertising.jpg"/>
+					</div>
+					<div class="header-name">
+						<span class="supervisesDetail-title">
+							狗年组
+						</span>
+						现任组长:朱海清
+					</div>
+					<div class="header-title">
+						<div class="history">
+							历任组长
+						</div>
+					</div>
+				</div>
+				<div class="supervisesDetail-main">
+					狗年组由朱海青创建成立于2017/10/1日.负责凌晨2-3点的社区审核.us pretium porttitor. Ut dictum nulla quis mauris gravida, ac lobortis enim lacinia. Suspendisse non lacinia justo. Donec dapibus neque vitae nunc feugiat, id mollis ante feugiat. Aenean gravida, mauris vel porta condimentum, dolor nisl consequat orci, nec gravida neque dui ac purus. Proin sagittis ex lectus, sit amet pulvinar turpis pulvinar nec. Sed vitae augue est. Morbi porttitor et nibh vitae luctus. In ullamcorper dictum mattis. Vivamus porta risus convallis lectus varius rutrum. Maecenas bibendum, augue sed faucibus viverra, nulla mi pellentesque mauris, a finibus enim sem quis quam. 
+				</div>
+				<div class="supervisesDetail-made">
+					<div class="made-item">
+						<div class="item-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="item-name">
+							朱海清
+							<span>
+								大督查长
+							</span>
+						</div>
+					</div>
+					<div class="made-item">
+						<div class="item-img">
+							<img src="img/advertising.jpg"/>
+						</div>
+						<div class="item-name">
+							朱海清
+							<span>
+								大督查长
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mytapp('.header-title','.history','GroupLeader.html','')
+		mui('.topbar').on('tap','.topbar-next',function(){
+			 mui.prompt("请输入邀请码，如果您没有邀请码，请联系首页客服！审核结果将会发送到您的消息！","请输入邀请码","操作提示",["确定","取消"],function(e){  
+           if(e.index == 0){  
+               mui.toast("你已关闭窗口");  
+           }else{  
+               mui.toast("你取消关闭窗口");  
+           }  
+       })  
+		})
+	</script>
+
+</html>

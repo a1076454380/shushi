@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap index dltabbar">
+			<div class="topbar">
+				<form action="" method="post">
+					<input type="submit" value="" />
+					<input type="text" name="" id="" value="" />
+				</form>
+				<div class="news">
+					<span class="mui-icon"><img src="img/dxin.png"/></span>
+				</div>
+			</div>
+			<div class="content" style="margin-top: .6rem;">
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/yuantiao.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/shuijiao.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/cbd.jpg">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/yuantiao.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/shuijiao.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<div class="navbar">
+					<div class="nav-item list">
+						<img src="img/p.png"/>
+						排行榜
+					</div>
+					<div class="nav-item nav">
+						<img src="img/flei.png"/>
+						分类
+					</div>
+					<div class="nav-item signIn">
+						<img src="img/qdao.png"/>
+						签到
+					</div>
+					<div class="nav-item txtcircle">
+						<img src="img/lmeng.png"/>
+						书友联盟
+					</div>
+					<div class="nav-item supervises">
+						<img src="img/dcha.png"/>
+						督察部
+					</div>
+					<div class="nav-item kefu">
+						<img src="img/kfu.png"/>
+						客服
+					</div>
+				</div>
+				<div class="menu">
+					<div class="menu-item menu-active">
+						编辑推荐
+					</div>
+					<div class="menu-item">
+						昨日最热
+					</div>
+					<div class="menu-item">
+						新书推荐
+					</div>
+					<div class="menu-item">
+						最近更新
+					</div>
+				</div>
+				<div class="index-content">
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+					<div class="index-img">
+						<img src="img/muwu.jpg"/>
+						斗破苍穹
+					</div>
+				</div>
+			</div>
+			<div class="bottombar">
+				<div class="bottom-item index">
+					<span class="mui-icon">
+						<img src="img/index.png"/>
+					</span>
+					<span>
+						首页
+					</span>
+				</div>
+				<div class="bottom-item activity">
+					<span class="mui-icon">
+						<img src="img/activity.png"/>
+					</span>
+					<span>
+						活动
+					</span>
+				</div>
+				<div class="bottom-circle create">
+					<div class="circle">
+						<img src="img/write.png"/>
+					</div>
+				</div>
+				<div class="bottom-item txtcircle">
+					<span class="mui-icon">
+						<img src="img/qzi.png"/>
+					</span>
+					<span>
+						书友圈
+					</span>
+				</div>
+				<div class="bottom-item userinform">
+					<span class="mui-icon">
+						<img src="img/user.png"/>
+					</span>
+					<span>
+						我的
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mui('.navbar').on('tap', '.kefu', function() {
+			window.location.href='http://wpa.qq.com/msgrd?v=3&uin=1342645386&site=qq&menu=yes'
+		})
+		mui('#slider').slider({
+			interval: 3000
+		});
+		mytapp('.topbar','.news','noNews.html','')
+		mytapp('.navbar','.nav','nav.html','')
+		mytapp('.navbar','.list','list.html','')
+		mytapp('.bottombar','.create','create.html','')
+		mytapp('.navbar','.txtcircle','union.html','')
+		mytapp('.navbar','.signIn','signIn.html','')
+		mytapp('.navbar','.supervises','supervises.html','')
+		mytapp('.bottombar','.userinform','usercanter.html','')
+		mytapp('.bottombar','.activity','activity.html','')
+		mytapp('.bottombar','.txtcircle','txtcircle.html','')
+	</script>
+
+</html>

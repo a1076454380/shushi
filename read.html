@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>斗破苍穹</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap read">
+			<div class="topbar">
+				<div class="topbar-back">
+					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+				</div>
+				<div class="topbar-text">
+					斗破苍穹
+				</div>
+				<div class="topbar-next">
+					返回目录
+				</div>
+			</div>
+			<div class="content">
+				<div class="read-main">
+					<p>
+						Cras gravida vel ex at consectetur. Aliquam vel volutpat ante. Integer id tempor eros, at lobortis augue. Etiam ipsum mi, placerat eget urna at, placerat sodales lorem. Donec accumsan tempus justo at hendrerit. Donec varius venenatis molestie. Sed volutpat nunc lorem.
+					</p>
+					<p>
+						Cras gravida vel ex at consectetur. Aliquam vel volutpat ante. Integer id tempor eros, at lobortis augue. Etiam ipsum mi, placerat eget urna at, placerat sodales lorem. Donec accumsan tempus justo at hendrerit. Donec varius venenatis molestie. Sed volutpat nunc lorem.
+					</p>
+					<p>
+						Cras gravida vel ex at consectetur. Aliquam vel volutpat ante. Integer id tempor eros, at lobortis augue. Etiam ipsum mi, placerat eget urna at, placerat sodales lorem. Donec accumsan tempus justo at hendrerit. Donec varius venenatis molestie. Sed volutpat nunc lorem.
+					</p>
+					<p>
+						Cras gravida vel ex at consectetur. Aliquam vel volutpat ante. Integer id tempor eros, at lobortis augue. Etiam ipsum mi, placerat eget urna at, placerat sodales lorem. Donec accumsan tempus justo at hendrerit. Donec varius venenatis molestie. Sed volutpat nunc lorem.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init({
+			doubletap:true
+		})
+		mui('.wrap').on('tap','.content',function(){
+			var boo=$('.topbar').css('top')
+			if(boo=='0px'){
+				$('.topbar').css('top','-1rem')
+			}else{
+				$('.topbar').css('top','0')
+			}
+		})
+		mytapp('.topbar','.topbar-next','directory.html','')
+	</script>
+</html>
