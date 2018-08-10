@@ -36,6 +36,7 @@ a{color: #666666;}
 .register-land input{margin: 0 0.2rem 0 0.2rem;width:3rem;}
 .registerqq{width: 1rem;height: 1rem;display: flex;justify-content: center;align-content: center;border-radius: 50%;overflow: hidden;margin: 0.5rem;}
 .registerqq img{width: 1rem;height: 1rem;}
+.land-submit{text-align: center;line-height: .8rem;border-radius: .1rem;}
 /*注册协议*/
 .agree-group{padding: 0 0.2rem 0 0.2rem;}
 .agree-title{font-weight: bold;line-height: 0.5rem;font-size: 0.3rem;color: #666666;}
@@ -325,7 +326,7 @@ a{color: #666666;}
 .item-arr{display: flex;align-items: center;}
 .Competition-item .mui-icon{font-size: 20px;}
 /*主体换色*/
-.topbar-back,.topbar-next,.topbar-back,.topbar-text,.pullOut,.mui-bar,.mui-title,.mui-bar-nav.mui-bar .mui-icon,.signIn .signIn-active,.join,input[type=submit],.new-tab .new-active,#com button,.createdbook .book-active,.createdbook input[type='submit'],.inform input[type='submit'],.index .menu-active,.create-bottom{background-color: #8ED1F5;color: white;border: 0;}
+.topbar-back,.topbar-next,.topbar-back,.topbar-text,.pullOut,.mui-bar,.mui-title,.mui-bar-nav.mui-bar .mui-icon,.signIn .signIn-active,.join,input[type=submit],.new-tab .new-active,.land-submit,#com button,.createdbook .book-active,.createdbook input[type='submit'],.inform input[type='submit'],.index .menu-active,.create-bottom{background-color: #8ED1F5;color: white;border: 0;}
 .mui-popover-arrow{background: 0;}
 
 /*bug*/

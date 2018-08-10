@@ -10,11 +10,11 @@
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
 		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
-		
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
-		<div class="wrap">
+		<div class="wrap" id="app">
 			<div class="topbar">
 				<div class="topbar-back">
 					<span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
@@ -35,28 +35,38 @@
 						<div class="nav-item">
 							悬疑
 						</div>
-						<div class="nav-item">
-							冒险
-						</div>
-						<div class="nav-item">
-							灵异
-						</div>
-						<div class="nav-item">
-							玄幻
-						</div>
-						<div class="nav-item">
-							犯罪
-						</div>
 					</div>
 				</div>
 			</div>
 
 		</div>
 	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		mui.init()
 		mui('.nav-group').on('tap', '.nav-item', function() {
 			mytap('nav-detail.html')
+		})
+		$(function(){
+			$.ajax({
+				type:"get",
+				url:"php/nav.php",
+				dataType:'json',
+				success:function(res){
+					if(res.code==200){
+						for (var i=0;i<res.data.length;i++) {
+							$('.nav-main').append(`
+								<div class="nav-item">
+									${res.data[i].name}
+								</div>
+							`)
+						}
+					}
+				},
+				error:function(err){
+					console.log(err)
+				}
+			});
 		})
 	</script>
 	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>

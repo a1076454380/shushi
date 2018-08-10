@@ -33,7 +33,7 @@
 					<img src="img/advertising.jpg" />
 				</div>
 				<div class="author-name">
-					昵称:未来
+					昵称: <span></span>
 				</div>
 				<div class="author-collect">
 					<div class="collect-list recharge">
@@ -98,6 +98,7 @@
 			</div>
 		</div>
 	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		mui.init()
@@ -110,5 +111,8 @@
 		mytapp('.author-collect','.revenue','revenue.html','')
 		mytapp('.author-collect','.mydown','download.html','')
 		mytapp('.author-collect','.mycollect','bookCollect.html','')
+		$(function(){
+			$('.author-name span').html(localStorage.getItem('username'))
+		})
 	</script>
 </html>

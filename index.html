@@ -12,6 +12,7 @@
 		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
 		<div class="wrap index dltabbar">
 			<div class="topbar">
@@ -65,28 +66,22 @@
 				</div>
 				<div class="navbar">
 					<div class="nav-item list">
-						<img src="img/p.png"/>
-						排行榜
+						<img src="img/p.png" /> 排行榜
 					</div>
 					<div class="nav-item nav">
-						<img src="img/flei.png"/>
-						分类
+						<img src="img/flei.png" /> 分类
 					</div>
 					<div class="nav-item signIn">
-						<img src="img/qdao.png"/>
-						签到
+						<img src="img/qdao.png" /> 签到
 					</div>
 					<div class="nav-item txtcircle">
-						<img src="img/lmeng.png"/>
-						书友联盟
+						<img src="img/lmeng.png" /> 书友联盟
 					</div>
 					<div class="nav-item supervises">
-						<img src="img/dcha.png"/>
-						督察部
+						<img src="img/dcha.png" /> 督察部
 					</div>
 					<div class="nav-item kefu">
-						<img src="img/kfu.png"/>
-						客服
+						<img src="img/kfu.png" /> 客服
 					</div>
 				</div>
 				<div class="menu">
@@ -105,28 +100,22 @@
 				</div>
 				<div class="index-content">
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 					<div class="index-img">
-						<img src="img/muwu.jpg"/>
-						斗破苍穹
+						<img src="img/muwu.jpg" /> 斗破苍穹
 					</div>
 				</div>
 			</div>
@@ -149,7 +138,7 @@
 				</div>
 				<div class="bottom-circle create">
 					<div class="circle">
-						<img src="img/write.png"/>
+						<img src="img/write.png" />
 					</div>
 				</div>
 				<div class="bottom-item txtcircle">
@@ -175,21 +164,29 @@
 	<script type="text/javascript">
 		mui.init()
 		mui('.navbar').on('tap', '.kefu', function() {
-			window.location.href='http://wpa.qq.com/msgrd?v=3&uin=1342645386&site=qq&menu=yes'
+			window.location.href = 'http://wpa.qq.com/msgrd?v=3&uin=1342645386&site=qq&menu=yes'
 		})
 		mui('#slider').slider({
 			interval: 3000
 		});
-		mytapp('.topbar','.news','noNews.html','')
-		mytapp('.navbar','.nav','nav.html','')
-		mytapp('.navbar','.list','list.html','')
-		mytapp('.bottombar','.create','create.html','')
-		mytapp('.navbar','.txtcircle','union.html','')
-		mytapp('.navbar','.signIn','signIn.html','')
-		mytapp('.navbar','.supervises','supervises.html','')
-		mytapp('.bottombar','.userinform','usercanter.html','')
-		mytapp('.bottombar','.activity','activity.html','')
-		mytapp('.bottombar','.txtcircle','txtcircle.html','')
+		mytapp('.topbar', '.news', 'noNews.html', '')
+		mytapp('.navbar', '.nav', 'nav.html', '')
+		mytapp('.navbar', '.list', 'list.html', '')
+		mytapp('.bottombar', '.create', 'create.html', '')
+		mytapp('.navbar', '.txtcircle', 'union.html', '')
+		mytapp('.navbar', '.signIn', 'signIn.html', '')
+		mytapp('.navbar', '.supervises', 'supervises.html', '')
+		mytapp('.bottombar', '.userinform', 'usercanter.html', '')
+		mytapp('.bottombar', '.activity', 'activity.html', '')
+		mytapp('.bottombar', '.txtcircle', 'txtcircle.html', '')
+		$(function() {
+			if(localStorage.getItem('userid') == null || localStorage.getItem('userid') == '' || localStorage.getItem('userid') == undefined) {
+				mui.openWindow({
+					url: 'land.html',
+					id: 'land',
+				})
+			}
+		})
 	</script>
 
 </html>

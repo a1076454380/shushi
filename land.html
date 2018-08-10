@@ -25,14 +25,14 @@
 			</div>
 		</div>
 		<div class="content">
-			<form action="" class="register-from">
-				<input type="text" name="" id="" value="" placeholder="请输入手机号码"/>
-				<input type="text" name="" id="" value="" placeholder="验证码"/>
+			<form action="" class="register-from" method="post">
+				<input type="text" name="" id="uname" value="" placeholder="请输入手机号码"/>
+				<input type="text" name="" id="upwd" value="" placeholder="验证码"/>
 				<div class="land-password">
 					<div class="password">忘记密码</div>
 				</div>
 				<div class="register-land">
-					<input type="submit" name="" id="" value="登录" class="land-submit"/>
+					<div class="land-submit"/>登录</div>
 				</div>
 				<div class="register-land">
 					<a href="#" class="registerqq">
@@ -48,6 +48,7 @@
 			</form>
 		</div>
 	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		mui.init()
 		mui('.register-agreement')[0].addEventListener('tap',function(){
@@ -55,6 +56,43 @@
 		})
 		mui('.password')[0].addEventListener('tap',function(){
 			mytap('password.html')
+		})
+		$(function(){
+			$('.land-submit').click(function(){
+				if($('#uname').val()==''){
+					alert('手机号不能为空');
+					return false;
+				}
+				if($('#upwd').val()==''){
+					alert('密码不能为空');
+					return false;
+				}
+				$.ajax({
+					type:"post",
+					url:"php/land.php",
+					dataType:'json',
+					data:{
+						uname:$('#uname').val(),
+						upwd:$('#upwd').val()
+					},
+					success:function(res){
+						console.log(res)
+						if(res.code==200){
+							localStorage.setItem('userid',res.data.uid)
+							localStorage.setItem('username',res.data.username)
+							mui.openWindow({
+								url:'index.html',
+								id:'index',
+							})
+						}else{
+							alert(res.message)
+						}
+					},
+					error:function(err){
+						console.log(err)
+					}
+				});
+			})
 		})
 	</script>
 </body>
