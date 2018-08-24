@@ -76,7 +76,6 @@
 						upwd:$('#upwd').val()
 					},
 					success:function(res){
-						console.log(res)
 						if(res.code==200){
 							localStorage.setItem('userid',res.data.uid)
 							localStorage.setItem('username',res.data.username)
